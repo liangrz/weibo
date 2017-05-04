@@ -1,0 +1,10 @@
+<?php
+include('./Base/DBMysqlBase.class.php');
+include('./Base/LoginBase.class.php');
+session_start();
+var_dump($_SESSION);
+if($_POST){
+	register($_POST['user'],$_POST['pwd1'],$_POST['pwd2']);
+	header('location:index.php');
+}
+?>

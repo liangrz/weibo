@@ -1,0 +1,12 @@
+<div class = 'weibo' data-wid='<?php echo $arr['id']?>'>
+	<div class = 'content'>
+		<?php echo Date('y-m-d H:i:s',$arr['create_time'])?>  
+		<?php echo $arr['user']?><br>
+		<?php echo $arr['content']?>
+	</div>
+	<div class = 'action'>
+		<span class = 'zan_b fr'>赞<span><?php echo $arr['zan']?></span></span>
+		<span class = 'comment_b fr'>评论</span>
+		<span class = 'delete_b fr'>删除</span>
+	</div>
+</div>
